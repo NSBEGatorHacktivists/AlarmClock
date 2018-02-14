@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This imports the w3.css external style sheet. For more information look up w3.css on google!-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+    <link rel="stylesheet" href="styles.css">
+    
+	<title>Online Alarm Clock</title>
+</head>
+<!-- With The w3.css sheet, we can style our content by assigning them a class-->
+<body class = "w3-black">
+	<div id="centered" class="w3-container w3-center">
+		<p id="time" class="w3-text-red w3-jumbo"></p>
+        <form>
+            <input id="wakeup-time" type="time" name="wakeup-time">
+        </form>
+        <button id = "alarm-btn" class="w3-button w3-red w3-large" style="margin-top: 1em" onclick="modifyAlarm()">Start Alarm</button>
+        <audio id="music">
+            <source src="chopin.mp3" type="audio/mpeg">
+        </audio>
+	</div>
+     <script src="script.js"></script>
+</body>
+</html>
